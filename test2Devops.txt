@@ -1,0 +1,18 @@
+manas-j5@DESKTOP-IKOO09O:~$ cd ~
+manas-j5@DESKTOP-IKOO09O:~$ touch index.html
+manas-j5@DESKTOP-IKOO09O:~$ echo "<html><body><h1>Welcome to My Server</h1></body></html>" > index.html
+manas-j5@DESKTOP-IKOO09O:~$ ls -l index.html
+-rw-r--r-- 1 manas-j5 manas-j5 56 Apr 24 05:08 index.html
+manas-j5@DESKTOP-IKOO09O:~$ chmod 777 index.html
+manas-j5@DESKTOP-IKOO09O:~$ ls -l index.html
+-rwxrwxrwx 1 manas-j5 manas-j5 56 Apr 24 05:08 index.html
+manas-j5@DESKTOP-IKOO09O:~$ sudo chown www-data:www-data index.html
+[sudo] password for manas-j5:
+manas-j5@DESKTOP-IKOO09O:~$ chmod 755 index.html
+chmod: changing permissions of 'index.html': Operation not permitted
+manas-j5@DESKTOP-IKOO09O:~$ ls -l index.html
+-rwxrwxrwx 1 www-data www-data 56 Apr 24 05:08 index.html
+manas-j5@DESKTOP-IKOO09O:~$ sudo chmod 755 index.html
+manas-j5@DESKTOP-IKOO09O:~$ ls -l index.html
+-rwxr-xr-x 1 www-data www-data 56 Apr 24 05:08 index.html
+manas-j5@DESKTOP-IKOO09O:~$

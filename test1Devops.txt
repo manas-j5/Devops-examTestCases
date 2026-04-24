@@ -1,0 +1,247 @@
+manas-j5@DESKTOP-IKOO09O:~$ whoami
+manas-j5
+manas-j5@DESKTOP-IKOO09O:~$ id -un
+manas-j5
+manas-j5@DESKTOP-IKOO09O:~$ w
+ 04:57:41 up 9 min,  2 users,  load average: 0.04, 0.18, 0.17
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+root     pts/3    -                04:48    9:25   0.00s   ?    -bash
+manas-j5 pts/1    -                04:48    9:26   0.05s  0.04s -bash
+manas-j5@DESKTOP-IKOO09O:~$ last
+reboot   system boot  6.6.87.2-microso Fri Apr 24 04:48   still running
+reboot   system boot  6.6.87.2-microso Thu Apr 23 14:19 - 20:23  (06:03)
+reboot   system boot  6.6.87.2-microso Fri Apr 17 05:57 - 10:31  (04:33)
+reboot   system boot  6.6.87.2-microso Thu Apr 16 19:20 - 20:15  (00:55)
+reboot   system boot  6.6.87.2-microso Thu Apr 16 10:00 - 11:16  (01:16)
+reboot   system boot  6.6.87.2-microso Thu Apr  9 10:20 - 11:21  (01:00)
+reboot   system boot  6.6.87.2-microso Tue Apr  7 04:37 - 04:38  (00:00)
+reboot   system boot  6.6.87.2-microso Mon Mar 30 08:09 - 09:34  (01:24)
+reboot   system boot  6.6.87.2-microso Fri Mar 27 08:27 - 09:34 (3+01:06)
+reboot   system boot  6.6.87.2-microso Mon Mar 23 09:25 - 11:14  (01:49)
+reboot   system boot  6.6.87.2-microso Fri Mar 20 08:19 - 09:36  (01:16)
+reboot   system boot  6.6.87.2-microso Fri Mar 20 03:44 - 07:58  (04:13)
+reboot   system boot  6.6.87.2-microso Thu Mar 19 10:22 - 11:11  (00:49)
+reboot   system boot  6.6.87.2-microso Tue Mar 17 04:23 - 04:26  (00:02)
+reboot   system boot  6.6.87.2-microso Tue Mar 17 04:20 - 04:23  (00:02)
+reboot   system boot  6.6.87.2-microso Tue Mar 17 04:07 - 04:08  (00:00)
+reboot   system boot  6.6.87.2-microso Mon Mar 16 08:16 - 11:20  (03:03)
+reboot   system boot  6.6.87.2-microso Thu Mar 12 13:19 - 02:26  (13:07)
+reboot   system boot  6.6.87.2-microso Thu Feb 26 10:57 - 11:20  (00:23)
+reboot   system boot  6.6.87.2-microso Thu Feb 26 10:27 - 10:56  (00:28)
+reboot   system boot  6.6.87.2-microso Mon Feb 23 08:09 - 09:38  (01:29)
+reboot   system boot  6.6.87.2-microso Fri Feb 20 17:12 - 17:13  (00:00)
+reboot   system boot  6.6.87.2-microso Fri Feb 20 08:46 - 09:34  (00:47)
+reboot   system boot  6.6.87.2-microso Fri Feb 20 08:45 - 08:46  (00:00)
+reboot   system boot  6.6.87.2-microso Fri Feb 20 08:45 - 08:46  (00:01)
+
+wtmp begins Fri Feb 20 08:45:02 2026
+manas-j5@DESKTOP-IKOO09O:~$ uname -a
+Linux DESKTOP-IKOO09O 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+manas-j5@DESKTOP-IKOO09O:~$ hostname
+DESKTOP-IKOO09O
+manas-j5@DESKTOP-IKOO09O:~$ uptime
+ 04:58:26 up 10 min,  2 users,  load average: 0.01, 0.15, 0.16
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupadd developers
+[sudo] password for manas-j5:
+groupadd: group 'developers' already exists
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupadd developers1
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupadd qa2
+manas-j5@DESKTOP-IKOO09O:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:manas-j5,devopscse
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:devopscse,user1,user2
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+manas-j5:x:1000:
+devopscse:x:1001:
+developercse:x:1003:manas-j5
+devopsce3:x:1004:
+qacse:x:1005:
+user1:x:1002:
+user2:x:1006:
+developers:x:1007:aman,ritu
+qa:x:1008:karan
+aman:x:1009:
+ritu:x:1010:
+karan:x:1011:
+er:x:1012:
+manas:x:1013:
+docker:x:1014:manas-j5
+developers1:x:1015:
+qa2:x:1016:
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G developers1 aman
+useradd: user 'aman' already exists
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G developers1 manas
+useradd: user 'manas' already exists
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G developers1 swaroop
+manas-j5@DESKTOP-IKOO09O:~$ getent group developers
+developers:x:1007:aman,ritu
+manas-j5@DESKTOP-IKOO09O:~$ getent group qa
+qa:x:1008:karan
+manas-j5@DESKTOP-IKOO09O:~$ id aman
+id ritu
+id karan
+uid=1007(aman) gid=1009(aman) groups=1009(aman),1007(developers)
+uid=1008(ritu) gid=1010(ritu) groups=1010(ritu),1007(developers)
+uid=1009(karan) gid=1011(karan) groups=1011(karan),1008(qa)
+manas-j5@DESKTOP-IKOO09O:~$ sudo pkill -u ritu   # (only if logged in, safe to run anyway)
+sudo userdel -r ritu
+userdel: ritu mail spool (/var/mail/ritu) not found
+manas-j5@DESKTOP-IKOO09O:~$ id ritu
+id: ‘ritu’: no such user
+manas-j5@DESKTOP-IKOO09O:~$ sudo pkill -u aman
+sudo pkill -u karan
+
+sudo userdel -r aman
+sudo userdel -r karan
+userdel: aman mail spool (/var/mail/aman) not found
+userdel: karan mail spool (/var/mail/karan) not found
+manas-j5@DESKTOP-IKOO09O:~$ id aman
+id karan
+id: ‘aman’: no such user
+id: ‘karan’: no such user
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupdel developers
+sudo groupdel qa
+manas-j5@DESKTOP-IKOO09O:~$ getent group developers
+getent group qa
+manas-j5@DESKTOP-IKOO09O:~$ getent group qa
+manas-j5@DESKTOP-IKOO09O:~$ getent group developers
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupadd developers
+manas-j5@DESKTOP-IKOO09O:~$ sudo groupadd qa
+manas-j5@DESKTOP-IKOO09O:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:manas-j5,devopscse
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:devopscse,user1,user2
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+manas-j5:x:1000:
+devopscse:x:1001:
+developercse:x:1003:manas-j5
+devopsce3:x:1004:
+qacse:x:1005:
+user1:x:1002:
+user2:x:1006:
+er:x:1012:
+manas:x:1013:
+docker:x:1014:manas-j5
+developers1:x:1015:swaroop
+qa2:x:1016:
+swaroop:x:1017:
+developers:x:1018:
+qa:x:1019:
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G developers aman
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G developers ritu
+manas-j5@DESKTOP-IKOO09O:~$ sudo useradd -m -G qa karan
+manas-j5@DESKTOP-IKOO09O:~$ id aman
+id ritu
+id karan
+uid=1012(aman) gid=1020(aman) groups=1020(aman),1018(developers)
+uid=1013(ritu) gid=1021(ritu) groups=1021(ritu),1018(developers)
+uid=1014(karan) gid=1022(karan) groups=1022(karan),1019(qa)
+manas-j5@DESKTOP-IKOO09O:~$ who | grep ritu
+manas-j5@DESKTOP-IKOO09O:~$ pkill -u ritu
+manas-j5@DESKTOP-IKOO09O:~$ sudo userdel -r ritu
+userdel: ritu mail spool (/var/mail/ritu) not found
+manas-j5@DESKTOP-IKOO09O:~$ id ritu
+id: ‘ritu’: no such user
+manas-j5@DESKTOP-IKOO09O:~$

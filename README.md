@@ -30,6 +30,11 @@ System audit commands display current user, active sessions, login history, host
 Groups developers and qa appear in the system group list.
 Users aman and karan are created and assigned to the correct groups (verified via id command).
 After deletion, any attempt to look up ritu returns: "no such user".
+
+
+
+
+
 Test Case 2 — File Permission Configuration
 Scenario: A web server requires a properly configured index.html file with specific ownership and access permissions.
 
@@ -47,6 +52,11 @@ After step 4, permissions show rwxrwxrwx.
 After step 5, owner and group both show www-data.
 Final ls -l output shows:
 -rwxr-xr-x 1 www-data www-data ... index.html
+
+
+
+
+
 Test Case 3 — Node.js Application Setup & Git Integration
 Scenario: You are setting up a new Node.js REST API from scratch and publishing it to GitHub.
 
